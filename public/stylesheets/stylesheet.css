@@ -1,0 +1,170 @@
+/*font used */
+/*colors used*/
+#content {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+#title, #content, button {
+  border-radius: 10px;
+}
+
+#middle, #footer, #content, #buttons {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  /*makes thing into flexible box*/
+  flex-wrap: wrap;
+  /*makes things with flex property wrap onto next line when there is not room */
+}
+
+#middle, #footer {
+  width: 100%;
+  margin: 0;
+  /*makes things go all the way across the page*/
+}
+
+#banner {
+  /* banner styling*/
+  width: 60%;
+  margin: 0 20% 0 20%;
+  background-color: #4ABDAC;
+  color: #DFDCE3;
+}
+
+#title {
+  /* title styling*/
+  width: 60%;
+  margin: 0 20% 0 20%;
+  background-color: #FC4A1A;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  color: #DFDCE3;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#middle {
+  align-items: flex-start;
+  /*stops div elements in something with flexing property from flexing too*/
+  padding-top: 20px;
+  /*gap btween title and middle*/
+}
+
+#content {
+  padding-right: 10px;
+  align-content: flex-start;
+  flex-direction: column;
+  /*makes text like stuff including p not stretch if in a flex box */
+  flex-grow: 1;
+  /*makes content fill space horizontally*/
+  width: 60%;
+  /*of window*/
+  margin-top: 0;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  background-color: #DFDCE3;
+  color: #062F4F;
+  text-align: left;
+  /*makes words go left*/
+  text-indent: 50px;
+  max-width: 1000px;
+  min-width: 250px;
+  /*makes sure not too big or too small*/
+  /*don't thing minwidth does anything in practice*/
+  font-size: 22px;
+  font-family: "Lato", sans-serif;
+}
+
+#buttons {
+  align-items: center;
+  /*can only make buttons centre if they are flex*/
+  width: 35%;
+  /*has to be less than 50% or goes onto next line*/
+  flex-grow: 1;
+  /*makes buttons box grow into space available*/
+}
+
+#footer {
+  /*footer styling*/
+  background-color: #4ABDAC;
+  color: #DFDCE3;
+}
+
+.title {
+  font-size: 40px;
+  margin: auto;
+}
+
+html, body {
+  /*stops there being a margin around the outide*/
+  margin: 0;
+  padding: 0;
+  background-color: #4ABDAC;
+}
+
+h1 {
+  /*title styling*/
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+
+.subtitle {
+  color: #062F4F;
+}
+
+#content h4 {
+  display: block;
+  color: #F7B733;
+}
+
+button {
+  /*button styling*/
+  width: 45%;
+  flex-grow: 3;
+  /*makes buttons fill available space*/
+  margin: 3px 2% 3px 2%;
+  /*top right bottom left*/
+  min-width: 200px;
+  height: 60px;
+  /*fixed height to fit two lines in*/
+  padding: 0;
+  font-size: 22px;
+  color: #FC4A1A;
+  text-align: center;
+  /*centres text*/
+  text-shadow: 0 1px 2px black;
+  /*shadow effect on text*/
+  background: #F7B733;
+  border: 1px solid #DFDCE3;
+  border-bottom: 2px solid #FC4A1A;
+  cursor: pointer;
+  /*makes hand appear when hovering over button*/
+  -webkit-box-shadow: inset 0 -2px #FC4A1A;
+  box-shadow: inset 0 -2px #FC4A1A;
+  /* two lines make shadow for box work on different browsers*/
+}
+
+/* Smooth outline with box-shadow on hover: */
+button:hover {
+  -webkit-box-shadow: 0 0 3pt 2pt #FC4A1A;
+  box-shadow: 0 0 3pt 2pt #FC4A1A;
+}
+
+iframe {
+  margin: auto;
+}
